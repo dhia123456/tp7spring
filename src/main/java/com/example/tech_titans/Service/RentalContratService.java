@@ -22,7 +22,7 @@ public class RentalContratService {
     }
 
     public RentalContract getRentalContractById(Integer rentalContractId) {
-        Optional<RentalContract> rentalContract = rentalContractRepository.findById(Long.valueOf(rentalContractId));
+        Optional<RentalContract> rentalContract = rentalContractRepository.findById(    Long.valueOf(rentalContractId));
         return rentalContract.orElse(null);
     }
 
